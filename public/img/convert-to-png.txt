@@ -1,0 +1,8 @@
+INSTRUCCIONES PARA CONVERTIR SVG A PNG:
+
+1. Abre guardian-logo.svg en tu navegador
+2. Guarda como imagen PNG
+3. Renombra a guardian-logo.png
+4. Haz lo mismo con guardian-favicon.svg → guardian-favicon.png
+
+Los archivos SVG ya están listos y la página web ya está configurada para usar PNG.
