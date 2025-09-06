@@ -1,0 +1,69 @@
+<svg width="350" height="120" viewBox="0 0 350 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C34350;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#B14452;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A03D4A;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C34350;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B14452;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Shield Background with Shadow -->
+  <path d="M25 25 L25 70 Q25 90 45 90 L55 90 Q75 90 75 70 L75 25 Q75 15 65 15 L35 15 Q25 15 25 25 Z" 
+        fill="url(#shieldGradient)" 
+        stroke="#ffffff" 
+        stroke-width="3"
+        filter="url(#shadow)"/>
+  
+  <!-- Shield Inner Border -->
+  <path d="M35 30 L35 65 Q35 75 45 75 L55 75 Q65 75 65 65 L65 30 Q65 25 60 25 L40 25 Q35 25 35 30 Z" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="2" 
+        opacity="0.6"/>
+  
+  <!-- Cross in Shield -->
+  <path d="M45 40 L55 40 M50 35 L50 45" 
+        stroke="#ffffff" 
+        stroke-width="4" 
+        stroke-linecap="round"/>
+  
+  <!-- Crown on Shield -->
+  <path d="M35 20 L40 8 L45 15 L50 8 L55 15 L60 8 L65 20" 
+        fill="#ffffff" 
+        stroke="none"/>
+  
+  <!-- Security Star -->
+  <polygon points="50,50 52,58 60,58 54,62 56,70 50,66 44,70 46,62 40,58 48,58" 
+           fill="#ffffff" 
+           opacity="0.8"/>
+  
+  <!-- Company Name -->
+  <text x="95" y="45" font-family="Montserrat, sans-serif" font-size="32" font-weight="900" fill="url(#textGradient)" letter-spacing="2px">
+    GUARDIAN
+  </text>
+  <text x="95" y="70" font-family="Montserrat, sans-serif" font-size="24" font-weight="700" fill="#C34350" letter-spacing="1px">
+    DEL SUR
+  </text>
+  
+  <!-- Tagline -->
+  <text x="95" y="85" font-family="Source Sans Pro, sans-serif" font-size="14" font-weight="600" fill="#64748b" letter-spacing="1px">
+    SEGURIDAD INTEGRAL
+  </text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="280" cy="30" r="6" fill="#C34350" opacity="0.2"/>
+  <circle cx="300" cy="45" r="4" fill="#589BFF" opacity="0.2"/>
+  <circle cx="290" cy="60" r="5" fill="#C34350" opacity="0.2"/>
+  
+  <!-- Decorative Lines -->
+  <line x1="95" y1="95" x2="250" y2="95" stroke="#C34350" stroke-width="2" opacity="0.4"/>
+  <line x1="95" y1="100" x2="200" y2="100" stroke="#589BFF" stroke-width="1" opacity="0.3"/>
+</svg>
