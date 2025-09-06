@@ -167,7 +167,7 @@ section:nth-child(even)::after {
     transform: scale(1.05);
 }
 
-.logo-img {
+    .logo-img {
     height: 5rem;
     width: auto;
     object-fit: contain;
@@ -294,6 +294,18 @@ section:nth-child(even)::after {
     text-align: left;
 }
 
+.mobile-logo {
+    display: none;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.mobile-logo-img {
+    max-width: 300px;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+}
+
 .hero-title {
     font-size: 4.8rem;
     font-weight: 900;
@@ -409,9 +421,11 @@ section:nth-child(even)::after {
 .main-logo {
     width: 100%;
     height: auto;
-    max-width: 500px;
+    max-width: 600px;
     filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
     transition: all 0.3s ease;
+    z-index: 10;
+    position: relative;
 }
 
 .main-logo:hover {
@@ -421,17 +435,18 @@ section:nth-child(even)::after {
 
 .floating-elements {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
     pointer-events: none;
+    z-index: 1;
 }
 
 .element {
     position: absolute;
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     background: white;
     border-radius: 50%;
     display: flex;
@@ -439,22 +454,23 @@ section:nth-child(even)::after {
     justify-content: center;
     box-shadow: var(--shadow-lg);
     animation: float 6s ease-in-out infinite;
+    opacity: 0.8;
 }
 
 .element i {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--primary-color);
 }
 
 .element-1 {
-    top: 10%;
-    right: 10%;
+    top: 5%;
+    right: 5%;
     animation-delay: 0s;
 }
 
 .element-2 {
-    bottom: 20%;
-    left: 10%;
+    bottom: 5%;
+    left: 5%;
     animation-delay: 2s;
 }
 
@@ -744,7 +760,7 @@ section:nth-child(even)::after {
 
 .servicio-features li {
     display: flex;
-    align-items: center;
+        align-items: center;
     gap: 1rem;
     font-size: 1.4rem;
     color: var(--light-text);
@@ -797,21 +813,21 @@ section:nth-child(even)::after {
 }
 
 .trabajo-overlay {
-    position: absolute;
+        position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+        left: 0;
+        width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
 
 .trabajo-item:hover .trabajo-overlay {
-    opacity: 1;
+        opacity: 1;
 }
 
 .trabajo-info {
@@ -827,7 +843,7 @@ section:nth-child(even)::after {
 }
 
 .trabajo-info p {
-    font-size: 1.6rem;
+        font-size: 1.6rem;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
@@ -933,7 +949,7 @@ section:nth-child(even)::after {
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: 100%;
+        width: 100%;
     padding: 1.5rem;
     border: 2px solid var(--border-color);
     border-radius: 1rem;
@@ -1146,7 +1162,7 @@ section:nth-child(even)::after {
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: flex;
+    display: flex;
     }
     
     .navbar {
@@ -1165,6 +1181,14 @@ section:nth-child(even)::after {
         grid-template-columns: 1fr;
         text-align: center;
         gap: 3rem;
+    }
+    
+    .mobile-logo {
+        display: block;
+    }
+    
+    .hero-image {
+        display: none;
     }
     
     .hero-title {
@@ -1224,14 +1248,18 @@ section:nth-child(even)::after {
         font-size: 3.6rem;
     }
     
+    .mobile-logo-img {
+        max-width: 250px;
+    }
+    
     .hero-actions {
         flex-direction: column;
-        width: 100%;
+    width: 100%;
     }
     
     .btn-primary,
     .btn-secondary {
-        width: 100%;
+    width: 100%;
         justify-content: center;
     }
 }
